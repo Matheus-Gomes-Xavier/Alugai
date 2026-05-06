@@ -1,1 +1,19 @@
-db.php
+# Variáveis de ambiente e credenciais
+.env
+.env.local
+.env.production
+
+# Dependências
+/vendor/
+node_modules/
+
+# Logs
+*.log
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
