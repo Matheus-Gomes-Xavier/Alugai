@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🔧 Aluga-ai
 
 > Plataforma de aluguel de itens entre pessoas — conectando quem tem com quem precisa.
@@ -163,3 +164,6 @@ Após o deploy, execute o `schema.sql` no banco remoto usando qualquer cliente M
 ## 📄 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+=======
+# Alugai
+>>>>>>> 380c04207a3201c537ccdeb0ddc419c1a3ed70c5
