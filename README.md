@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 🔧 Aluga-ai
 
 > Plataforma de aluguel de itens entre pessoas — conectando quem tem com quem precisa.
@@ -81,84 +81,6 @@ aluga-ai/
 
 ---
 
-## ☁️ Deploy no Render
-
-O Render suporta PHP via Docker. Siga os passos abaixo:
-
-### 1. Crie o banco de dados
-
-No painel do Render, crie um serviço **MySQL** (ou use o [PlanetScale](https://planetscale.com/) / [Railway](https://railway.app/) que oferecem MySQL gratuito). Anote as credenciais geradas.
-
-### 2. Configure as variáveis de ambiente no Render
-
-No painel do seu Web Service → **Environment** → adicione:
-
-| Variável   | Valor                        |
-|------------|------------------------------|
-| `DB_HOST`  | host fornecido pelo serviço  |
-| `DB_USER`  | usuário do banco             |
-| `DB_PASS`  | senha do banco               |
-| `DB_NAME`  | `alugai`                     |
-
-### 3. Crie o `Dockerfile` na raiz do projeto
-
-```dockerfile
-FROM php:8.2-apache
-
-# Habilita extensão mysqli
-RUN docker-php-ext-install mysqli
-
-# Copia os arquivos do projeto
-COPY . /var/www/html/
-
-# Permissões
-RUN chown -R www-data:www-data /var/www/html
-```
-
-### 4. Suba para o GitHub e conecte ao Render
-
-- No Render, crie um **Web Service**
-- Conecte seu repositório GitHub
-- Em **Runtime**, selecione **Docker**
-- Clique em **Deploy**
-
-### 5. Popule o banco
-
-Após o deploy, execute o `schema.sql` no banco remoto usando qualquer cliente MySQL (TablePlus, DBeaver, ou via terminal com as credenciais do Render).
-
----
-
-## 🔒 Segurança
-
-- Senhas armazenadas com `password_hash()` — nunca em texto puro
-- Queries com `prepared statements` — protegido contra SQL Injection
-- Credenciais do banco em variáveis de ambiente — nunca no código
-- Validação de categoria via `in_array()` no servidor
-- Itens só podem ser editados/apagados pelo próprio dono
-
----
-
-## 🛣️ Próximos passos
-
-- [ ] Upload de foto para os itens
-- [ ] Sistema de reserva com datas
-- [ ] Chat entre locador e locatário
-- [ ] Avaliações e comentários
-- [ ] Pagamento integrado (Stripe / Mercado Pago)
-- [ ] Filtro por localização geográfica real
-
----
-
-## 🧑‍💻 Tecnologias
-
-| Camada     | Tecnologia                     |
-|------------|-------------------------------|
-| Back-end   | PHP 8+                        |
-| Banco      | MySQL / MariaDB               |
-| Front-end  | Bootstrap 5, HTML5, CSS3      |
-| Mapas      | Google Maps JavaScript API    |
-| Ícones     | Font Awesome 6                |
-
 ---
 
 ## 📄 Licença
@@ -166,4 +88,3 @@ Após o deploy, execute o `schema.sql` no banco remoto usando qualquer cliente M
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 =======
 # Alugai
->>>>>>> 380c04207a3201c537ccdeb0ddc419c1a3ed70c5
