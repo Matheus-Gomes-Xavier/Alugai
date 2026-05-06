@@ -1,7 +1,7 @@
 -- Banco de dados: renthub
 -- Execute este script para criar a estrutura do banco
 
-CREATE DATABASE IF NOT EXISTS renthub CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE DATABASE IF NOT EXISTS alugai CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE renthub;
 
 CREATE TABLE IF NOT EXISTS usuarios (
