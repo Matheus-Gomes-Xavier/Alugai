@@ -98,7 +98,7 @@ No painel do seu Web Service → **Environment** → adicione:
 | `DB_HOST`  | host fornecido pelo serviço  |
 | `DB_USER`  | usuário do banco             |
 | `DB_PASS`  | senha do banco               |
-| `DB_NAME`  | `renthub`                    |
+| `DB_NAME`  | `alugai`                     |
 
 ### 3. Crie o `Dockerfile` na raiz do projeto
 
