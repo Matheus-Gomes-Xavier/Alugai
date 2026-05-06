@@ -1,0 +1,139 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #121212;
+  color: #eee;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+.container {
+  background: #1a1a1a;
+  padding: 2.5rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
+  width: 100%;
+  max-width: 420px;
+}
+
+/* Link de voltar */
+.back-link {
+  display: inline-block;
+  color: #888;
+  text-decoration: none;
+  font-size: 0.88rem;
+  margin-bottom: 1.2rem;
+  transition: color 0.2s;
+}
+.back-link:hover {
+  color: #f39c12;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  color: #f39c12;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+textarea,
+select {
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background: #2a2a2a;
+  color: #eee;
+  font-size: 1rem;
+  transition: background-color 0.25s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  background: #333;
+}
+
+button {
+  padding: 0.85rem 1rem;
+  background: #f39c12;
+  color: #121212;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.25s;
+  font-size: 1rem;
+}
+
+button:hover {
+  background: #d87e04;
+}
+
+.error-msg {
+  background: #c0392b;
+  color: #fff;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 0.92rem;
+}
+
+/* Dashboard header */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-header h2 {
+  margin: 0;
+  color: #f39c12;
+  text-align: left;
+}
+
+/* Lista legada (mantida para compatibilidade) */
+.dashboard-items {
+  list-style: none;
+  padding: 0;
+}
+
+.dashboard-items li {
+  background: #222;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  transition: background 0.25s;
+}
+
+.dashboard-items li:hover {
+  background: #2e2e2e;
+}
+
+.dashboard-items strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+  color: #f39c12;
+}
